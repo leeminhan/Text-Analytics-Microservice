@@ -3,7 +3,7 @@ from typing import List
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sentence_transformers import SentenceTransformer, util
-model = SentenceTransformer('stsb-roberta-base-v2')
+model = SentenceTransformer('./serverless-bert/stsb-roberta-base-v2')
 
 # defining the corpus: oth index is model_answer
 # ensure corpus mock data has not indentation on the left
