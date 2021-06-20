@@ -5,3 +5,4 @@ __pycache__
 stsb-roberta-base-v2
 stsb-distilroberta-base-v2
 paraphrase-distilroberta-base-v2
+.serverless
