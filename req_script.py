@@ -15,11 +15,12 @@ sample_data_prod = {
     ]
 }
 
-# To run locally ======
+# Request Local Docker ======
 obj = json.dumps(sample_data)
 response = requests.post('http://localhost:8080/2015-03-31/functions/function/invocations', data = obj)
 print(json.dumps(response.json(), indent=1))
 
+# Request AWS ======
 # obj = json.dumps(sample_data_prod)
-# response = requests.post('https://cmuzbmhg3e.execute-api.ap-southeast-1.amazonaws.com/dev/qa', data = obj)
+# response = requests.post('https://cmuzbmhg3e.execute-api.ap-southeast-1.amazonaws.com/dev/qa', data = obj) // replace endpoint with yours
 # print(json.dumps(response.json(), indent=1))

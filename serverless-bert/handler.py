@@ -3,7 +3,9 @@ from typing import List
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sentence_transformers import SentenceTransformer, util
-model = SentenceTransformer('stsb-roberta-base-v2')
+# model = SentenceTransformer('stsb-roberta-base-v2')
+# model = SentenceTransformer('stsb-distilroberta-base-v2')
+model = SentenceTransformer('paraphrase-distilroberta-base-v2')
 
 def getLexicalSimilarityScore(corpus:List[str]):
     """Compute Lexical Text Similarity Score For 1 Question
