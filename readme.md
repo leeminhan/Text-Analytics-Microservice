@@ -1,4 +1,4 @@
-# Rolljak - Text Analytics Microservice
+# Text Analytics Microservice
 # Getting Started
 
 ```bash
